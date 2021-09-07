@@ -6,12 +6,137 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <script src="app.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+          // Add smooth scrolling to all links
+          $("a").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+
+              // Store hash
+              var hash = this.hash;
+
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 600, function(){
+   
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          });
+        });
+        </script>
     </head>
 
     <body>
-        <h1>Caleb<br />Velebit</h1>
-        <h2>Web developer</h2>
-        <img src ="images/.jpg" alt="picture here"/>
+        <div class="main">
+        <div class="nav_bar">
+        <div class="container-fluid">
+            <div class="row align-content-center">
+                <div class="col">
+                    <b>Caleb Velebit</b>
+                </div>
+                <!--<div class="col">
+                    <img src ="images/CV Logo.png" height="24" alt="Caleb Velebit picture" style="padding:0px 5px 0px 5px; text-align:center"/>
+                </div>-->
+                <div class="col-auto">
+                    <a href="#about" class="button">About</a>
+                </div>
+                <div class="col-auto">
+                    <a href="#experience" class="button">Experience</a>
+                </div>
+                <div class="col-auto">
+                    <a href="#projects" class="button">Projects</a>
+                </div>
+                <div class="col-auto">
+                    <a href="#contact" class="button">Contact</a>
+                </div>
+                <div class="col-auto">
+                    <a href="#home"><img src ="images/home.png" width="24" height="24" class="img-fluid" alt="Home icon"/></a>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+        
+        <a class="anchor" id ="home"><div class="section-body">
+            <div class="container-fluid">
+                <div class="row align-content-center">
+                    <div class="col">
+                        <br /><h1 style="padding: 50px 50px 0px 50px">Caleb Velebit</h1><br />
+                        <h2 style="padding: 50px 50px 50px 50px">CSCI student</h2>
+                    </div>
+                    <div class="col">
+                        <img src ="images/Cartoon Portrait.png" id="circle-border-pic" alt="Caleb Velebit" style="padding: 60px 15px 60px 15px"/>
+                    </div>
+                </div>
+            </div>
+        </div></a>
+
+        <a class="anchor" id ="about"><div class="section-body">
+            <h1 style ="margin:10px 10px 10px 10px">About</h1>
+            <div class="container-fluid">
+                <div class="row align-content-center">
+                    <div class="col">
+                    
+                    </div>
+                    <div class="col">
+                    
+                    </div>
+                </div>
+            </div>
+        </div></a>
+
+        <a class="anchor" id ="experience"><div class="section-body">
+            <h1 style ="margin:10px 10px 10px 10px">Experience</h1>
+            <div class="container-fluid">
+                <div class="row align-content-center">
+                    <div class="col">
+                    
+                    </div>
+                    <div class="col">
+                    
+                    </div>
+                </div>
+            </div>
+        </div></a>
+
+        <a class="anchor" id ="projects"><div class="section-body">
+            <h1 style ="margin:10px 10px 10px 10px">Projects</h1>
+            <div class="container-fluid">
+                <div class="row align-content-center">
+                    <div class="col">
+                    
+                    </div>
+                    <div class="col">
+                    
+                    </div>
+                </div>
+            </div>
+        </div></a>
+
+        <a class="anchor" id ="contact"><div class="section-body">
+            <h1 style ="margin:10px 10px 10px 10px">Contact</h1>
+            <div class="container-fluid">
+                <div class="row align-content-center">
+                    <div class="col">
+                    
+                    </div>
+                    <div class="col">
+                    
+                    </div>
+                </div>
+            </div>
+        </div></a>
+
+        </div>
     </body>
 
 </html>
