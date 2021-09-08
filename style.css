@@ -9,6 +9,7 @@ body, html {
     background-attachment: fixed;
     background-size: cover;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .nav_bar {
@@ -29,6 +30,12 @@ body, html {
     border-radius: 50%;
 }
 
+#python-image {
+    width: auto;
+    height: 200px;
+    padding: 15px 15px 15px 15px;
+}
+
 .anchor {
 }
 
@@ -36,7 +43,7 @@ body, html {
     background-color: black;
     margin: 50px 50px 50px 50px;
     color: white;
-    height: 600px;
+    height: auto;
 }
 
 .button {
@@ -53,13 +60,9 @@ body, html {
 .button:hover, .button:active {
     color:white;
     background-color: #303030;
+    cursor: pointer;
 }
 
 div.col-auto{
     padding: 0px 5px;
-}
-
-a:hover, a.active {
-    cursor: pointer;
-
 }
